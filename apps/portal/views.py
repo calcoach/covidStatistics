@@ -33,13 +33,13 @@ def home(request):
     for (label, estado) in zip(labels,estados):
        labels_with_percentage.append(func(label, estado, estados))
 
-    fig, ax = plt.subplots(figsize = (30, 7))
+    fig, ax = plt.subplots(figsize = (10, 7))
 
     ax.pie(estados, explode=explode, labels=labels,  startangle=180)
 
     plt.axis('equal') # Try commenting this out.
     plt.title('Estado Contagiados Covid En Colombia')
-    plt.legend(labels_with_percentage, loc='left center', bbox_to_anchor=(-0.1, 1.),
+    plt.legend(labels_with_percentage, loc='center', bbox_to_anchor=(0, 1),
               fontsize=12)
 
     #plt.plot(range(10))
