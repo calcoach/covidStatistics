@@ -9,6 +9,7 @@ matplotlib = "*"
 numpy = "*"
 sodapy = "*"
 pandas = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.8.3"
